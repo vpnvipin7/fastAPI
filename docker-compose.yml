@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  login:
+    image: jwtlogin
+    build: jwtlogin
+    ports:
+      - "8081:8081"
+  order:
+    image: order
+    build: order
+    ports:
+      - "8001:8001"
